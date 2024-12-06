@@ -4,12 +4,8 @@ module com.example.tp_java_s9_tripodi {
     requires javafx.web;
 
     requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires net.synedra.validatorfx;
-    requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.net.http;
 
     opens com.example.tp_java_s9_tripodi to javafx.fxml;
     exports com.example.tp_java_s9_tripodi;
