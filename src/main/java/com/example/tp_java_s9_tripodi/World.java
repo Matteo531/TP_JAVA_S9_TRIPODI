@@ -67,8 +67,8 @@ public class World {
     }
 
     public static void main(String[] args){
-        World w = new World ("src/main/resources/com/example/tp_java_s9_tripodi/airport-codes_no_comma.csv");
-        System.out.println("Found "+w.getList().size()+" airports.");
+        World w = new World ("src/main/resources/com/example/tp_java_s9_tripodi/airport-codes_no_comma.csv"); // Chemin relatif
+        System.out.println("Found "+w.getList().size()+" airports."); // Test de la fonction FindNearestAirport
         Aeroport paris = w.findNearestAirport(2.316,48.866);
         Aeroport cdg = w.findByCode("CDG");
         double distance = w.distance(2.316,48.866,paris.getLongitude(),paris.getLatitude());

@@ -65,6 +65,8 @@ public class Interface extends Application {
         primaryStage.setScene(ihm);
 
         primaryStage.show();
+
+
     }
 
     public static void main(String[] args) {
