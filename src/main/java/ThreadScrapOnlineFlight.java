@@ -1,12 +1,3 @@
-import com.example.tp_java_s9_tripodi.Aeroport;
-import com.example.tp_java_s9_tripodi.Earth;
-import com.example.tp_java_s9_tripodi.World;
-
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.util.ArrayList;
 /*
 public class ThreadScrapOnlineFlight extends Thread{
     ArrayList<com.example.tp_java_s9_tripodi.Aeroport.Flight> listOfFlight;

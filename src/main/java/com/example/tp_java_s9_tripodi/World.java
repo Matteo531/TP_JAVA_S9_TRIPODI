@@ -3,8 +3,6 @@ package com.example.tp_java_s9_tripodi;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 
 import static java.lang.Double.parseDouble;
 

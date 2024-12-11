@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bdf8e6b-99d1-4169-97d0-d585ba60f663" name="Changes" comment="Problème affichage Régler (Début API)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/ApiRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Flight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/JsonFlightFiller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/TestJson.java" afterDir="false" />
+    <list default="true" id="3bdf8e6b-99d1-4169-97d0-d585ba60f663" name="Changes" comment="Création de plusieurs classes, problème au niveau de la class javax.json (API)">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp_java_s9_tripodi/libJson/javax.json-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp_java_s9_tripodi/libJson/javax.json-api-1.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Earth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Earth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JsonFlightFillerOracle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonFlightFillerOracle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ThreadScrapOnlineFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ThreadScrapOnlineFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Aeroport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Aeroport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/JsonFlightFiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/JsonFlightFiller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Matteo531 &lt;matteotripodi12@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -38,6 +45,9 @@
     "accountId": "028d8c4d-4571-41e3-a4ff-39f880edab1f"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -64,14 +74,15 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Matteo/IdeaProjects/TP_JAVA_S9_TRIPODI/src/main/resources/com/example/tp_java_s9_tripodi/libJson/javax.json-api-1.1.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -81,7 +92,7 @@
       <recent name="com.example.tp_java_s9_tripodi" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestJson">
+  <component name="RunManager" selected="Application.TP_Java">
     <configuration name="TP_Java" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.tp_java_s9_tripodi.Interface" />
       <module name="TP_JAVA_S9_TRIPODI" />
@@ -153,7 +164,7 @@
       <workItem from="1733406225318" duration="7201000" />
       <workItem from="1733414491753" duration="536000" />
       <workItem from="1733415499550" duration="581000" />
-      <workItem from="1733925215198" duration="3334000" />
+      <workItem from="1733925215198" duration="5067000" />
     </task>
     <task id="LOCAL-00001" summary="Problème affichage Régler (Début API)">
       <option name="closed" value="true" />
@@ -171,7 +182,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733926523777</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Création de plusieurs classes, problème au niveau de la class javax.json (API)">
+      <option name="closed" value="true" />
+      <created>1733928609055</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733928609055</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Création de plusieurs classes, problème au niveau de la class javax.json (API)">
+      <option name="closed" value="true" />
+      <created>1733928623986</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733928623986</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +207,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Problème affichage Régler (Début API)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Problème affichage Régler (Début API)" />
+    <MESSAGE value="Création de plusieurs classes, problème au niveau de la class javax.json (API)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Création de plusieurs classes, problème au niveau de la class javax.json (API)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

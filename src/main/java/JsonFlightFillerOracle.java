@@ -1,4 +1,3 @@
-import com.example.tp_java_s9_tripodi.World;
 /*
 import javax.json.Json;
 import javax.json.JsonArray;

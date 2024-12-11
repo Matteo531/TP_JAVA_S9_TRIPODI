@@ -1,8 +1,8 @@
 package com.example.tp_java_s9_tripodi;
 
 import javax.json.Json;
-import javax.json.JsonObject;
 import javax.json.JsonArray;
+import javax.json.JsonObject;
 import javax.json.JsonReader;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -49,4 +49,21 @@ public class JsonFlightFiller {
     public ArrayList<Flight> getList() {
         return list;
     }
+
+// Dans la classe JsonFlightFiller, ajouter une méthode findByCode
+
+    public Aeroport findByCode(String iataCode) {
+        // Parcours de la liste des vols pour trouver l'aéroport correspondant
+        for (Flight flight : list) {
+            // Vérifiez si l'IATA correspond à l'aéroport de départ ou d'arrivée
+            if (flight.getDepartureIATA().equals(iataCode)) {
+                return new Aeroport(flight.getDepartureIATA()); // Remplacez par la création de l'aéroport à partir du code IATA
+            }
+            if (flight.getArrivalIATA().equals(iataCode)) {
+                return new Aeroport(flight.getArrivalIATA()); // Remplacez par la création de l'aéroport à partir du code IATA
+            }
+        }
+        return null; // Si aucun aéroport n'est trouvé
+    }
+
 }
