@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bdf8e6b-99d1-4169-97d0-d585ba60f663" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Flight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JsonFlightFillerOracle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ThreadScrapOnlineFlight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Aeroport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Earth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Interface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/World.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp_java_s9_tripodi/airport-codes_no_comma.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Flight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Earth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Earth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Interface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +26,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {}
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Matteo531/TP_JAVA_S9_TRIPODI.git",
-    "accountId": "01ce029e-6b08-49ce-963c-c304f3aa452f"
+    "accountId": "028d8c4d-4571-41e3-a4ff-39f880edab1f"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -118,8 +110,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
       </set>
     </attachedChunks>
   </component>
@@ -141,6 +133,7 @@
       <workItem from="1733406225318" duration="7201000" />
       <workItem from="1733414491753" duration="536000" />
       <workItem from="1733415499550" duration="581000" />
+      <workItem from="1733925215198" duration="1199000" />
     </task>
     <servers />
   </component>

@@ -17,8 +17,8 @@ public class Interface extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        World w = new World("src/main/resources/com/example/tp_java_s9_tripodi/airport-codes_no_comma.csv");
-       // ArrayList<com.example.tp_java_s9_tripodi.Aeroport.Flight> listOfFlight = new ArrayList<com.example.tp_java_s9_tripodi.Aeroport.Flight>();
+        World w = new World("C:/Users/Matteo/IdeaProjects/TP_JAVA_S9_TRIPODI/src/main/resources/com/example/tp_java_s9_tripodi/airport-codes_no_comma.csv"); // Utilise le chemin absolue car problème avec le ralatif
+        // ArrayList<com.example.tp_java_s9_tripodi.Aeroport.Flight> listOfFlight = new ArrayList<com.example.tp_java_s9_tripodi.Aeroport.Flight>();
 
         primaryStage.setTitle("So world");
 
@@ -56,8 +56,6 @@ public class Interface extends Application {
                     System.out.println("x="+longitude+" y ="+latitude);
                     System.out.println(a);
 
-                   // ThreadScrapOnlineFlight tsolf = new ThreadScrapOnlineFlight(earth,a,w,listOfFlight);
-                    //tsolf.start();        // Change to start();
                 }
             }
         });

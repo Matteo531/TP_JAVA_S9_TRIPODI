@@ -43,8 +43,10 @@ public class Earth extends Group {
 
         PhongMaterial skin = new PhongMaterial();
         javafx.scene.image.Image earthImage = new javafx.scene.image.Image(
-                getClass().getResource("/com/example/tp_java_s9_tripodi/earth_lights_4800.png").toExternalForm());
+                getClass().getResource("/com/example/tp_java_s9_tripodi/earth_lights_4800.png").toExternalForm()
+        );  // Utilisation du chemin relatif car j'avais une erreur avec le chemin absolue -> Réglé problème d'affichage de la Terre.
         skin.setDiffuseMap(earthImage);
+
         skin.setSelfIlluminationMap(earthImage);
         sph.setMaterial(skin);
         this.getChildren().add(sph);
