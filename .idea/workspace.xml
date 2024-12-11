@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bdf8e6b-99d1-4169-97d0-d585ba60f663" name="Changes" comment="Cependant, j'ai un problème avec le fichier CSV.&#10;Problème avec la lecture des informations Horaires." />
+    <list default="true" id="3bdf8e6b-99d1-4169-97d0-d585ba60f663" name="Changes" comment="Cependant, j'ai un problème avec le fichier CSV.&#10;Problème avec la lecture des informations Horaires.&#10;Dernière mise à jour du projet.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +30,12 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Matteo531/TP_JAVA_S9_TRIPODI.git",
-    "accountId": "028d8c4d-4571-41e3-a4ff-39f880edab1f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Matteo531/TP_JAVA_S9_TRIPODI.git&quot;,
+    &quot;accountId&quot;: &quot;028d8c4d-4571-41e3-a4ff-39f880edab1f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -48,34 +50,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.TP_Java.executor": "Run",
-    "Application.TestJson.executor": "Run",
-    "Application.World.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Matteo/IdeaProjects/TP_JAVA_S9_TRIPODI/src/main/resources/com/example/tp_java_s9_tripodi/libJson/javax.json-api-1.1.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.TP_Java.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestJson.executor&quot;: &quot;Run&quot;,
+    &quot;Application.World.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Matteo/IdeaProjects/TP_JAVA_S9_TRIPODI/src/main/resources/com/example/tp_java_s9_tripodi/libJson/javax.json-api-1.1.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.tp_java_s9_tripodi" />
@@ -154,6 +156,7 @@
       <workItem from="1733414491753" duration="536000" />
       <workItem from="1733415499550" duration="581000" />
       <workItem from="1733925215198" duration="7697000" />
+      <workItem from="1733932971601" duration="1170000" />
     </task>
     <task id="LOCAL-00001" summary="Problème affichage Régler (Début API)">
       <option name="closed" value="true" />
@@ -203,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733932947139</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cependant, j'ai un problème avec le fichier CSV.&#10;Problème avec la lecture des informations Horaires.&#10;Dernière mise à jour du projet.">
+      <option name="closed" value="true" />
+      <created>1733933579695</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733933579695</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +226,8 @@
     <MESSAGE value="Création de plusieurs classes, problème au niveau de la class javax.json (API)" />
     <MESSAGE value="Résolution des problèmes au niveau de la class javax.json (API). Cependant, j'ai un problème avec le fichier CSV." />
     <MESSAGE value="Cependant, j'ai un problème avec le fichier CSV.&#10;Problème avec la lecture des informations Horaires." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cependant, j'ai un problème avec le fichier CSV.&#10;Problème avec la lecture des informations Horaires." />
+    <MESSAGE value="Cependant, j'ai un problème avec le fichier CSV.&#10;Problème avec la lecture des informations Horaires.&#10;Dernière mise à jour du projet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cependant, j'ai un problème avec le fichier CSV.&#10;Problème avec la lecture des informations Horaires.&#10;Dernière mise à jour du projet." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
