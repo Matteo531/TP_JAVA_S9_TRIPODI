@@ -1,37 +1,68 @@
 package com.example.tp_java_s9_tripodi;
 
+import java.time.LocalDateTime;
+
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Flight {
-    private String flightNumber;
-    private String departureIATA;
-    private String arrivalIATA;
+    private String airLineCode;// Code de la compagnie aérienne
+    private String airlineName;// Nom complet de la compagnie aérienne
+    private LocalDateTime arrivalTime;// Heure d'arrivée prévue
+    private LocalDateTime departureTime;// Heure de départ prévue
+    private int number;// Numéro du vol
+    private String departureIATA; // Code IATA de l'aéroport de départ
 
-    // Constructeur
-    public Flight(String flightNumber, String departureIATA, String arrivalIATA) {
-        this.flightNumber = flightNumber;
+    public Flight(String airLineCode, String airlineName, LocalDateTime departureTime, LocalDateTime arrivalTime, int number, String departureIATA) {
+        this.airLineCode = airLineCode;
+        this.airlineName = airlineName;
+        this.departureTime = departureTime;
+        this.arrivalTime = arrivalTime;
+        this.number = number;
         this.departureIATA = departureIATA;
-        this.arrivalIATA = arrivalIATA;
     }
 
-    // 3 Getters
-    public String getFlightNumber() {
-        return flightNumber;
+    // Code permattant de mettre les dates et heures en ISO 8601.
+    public static void main(String[] args) {
+        String dateStr = "2024-12-11T04:08:00+00:00";  // Exemple de date avec décalage horaire
+
+        // Utiliser ZonedDateTime pour parser la date avec le décalage horaire
+        try {
+            ZonedDateTime date = ZonedDateTime.parse(dateStr, DateTimeFormatter.ISO_DATE_TIME);
+            System.out.println("Date correctement parsée: " + date);
+        } catch (Exception e) {
+            System.out.println("Erreur dans le parsing de la date: " + e.getMessage());
+        }
     }
 
-    public String getDepartureIATA() {
-        return departureIATA;
-    }
 
-    public String getArrivalIATA() {
-        return arrivalIATA;
-    }
 
-    // Méthode toString pour faciliter l'affichage
     @Override
     public String toString() {
         return "Flight{" +
-                "flightNumber='" + flightNumber + '\'' +
+                "airLineCode='" + airLineCode + '\'' +
+                ", airlineName='" + airlineName + '\'' +
+                ", arrivalTime=" + arrivalTime +
+                ", departureTime=" + departureTime +
+                ", number=" + number +
                 ", departureIATA='" + departureIATA + '\'' +
-                ", arrivalIATA='" + arrivalIATA + '\'' +
                 '}';
     }
+
+    // Méthode getArrival()
+    public LocalDateTime getArrival() {
+
+        return arrivalTime;
+    }
+
+    // Méthode getDeparture()
+    public LocalDateTime getDeparture() {
+
+        return departureTime;
+    }
+    public String getDepartureIATA() {
+
+        return departureIATA;
+    }
+
 }

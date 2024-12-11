@@ -11,21 +11,23 @@ import javafx.scene.transform.Rotate;
 import java.util.ArrayList;
 
 public class Earth extends Group {
-    private ArrayList<Sphere> yellowSpheres; // Liste pour stocker les sphères jaunes
-    private Rotate ry = new Rotate(); // Rotation pour l'animation de la Terre
-    private Sphere sph; // Représentation de la Terre
-    private Sphere redSphere; // Sphère rouge pour indiquer un aéroport sélectionné
-    private boolean needUpdate = false; // Indicateur pour les mises à jour de l'affichage
+    private ArrayList<Sphere> yellowSpheres;  // Liste pour stocker les sphères jaunes
+    private Rotate ry = new Rotate();  // Rotation pour l'animation de la Terre
+    private Sphere sph;  // Représentation de la Terre
+    private Sphere redSphere;  // Sphère rouge pour indiquer un aéroport sélectionné
+    private boolean needUpdate = false;  // Indicateur pour les mises à jour de l'affichage
+    private World world;  // Référence à l'objet World
 
-    public Earth() {
-        // Initialisation des éléments
+    // Constructeur avec un paramètre World
+    public Earth(World world) {
+        this.world = world;  // Initialiser la référence à World
         yellowSpheres = new ArrayList<>();
-        sph = new Sphere(300); // Rayon de la Terre
+        sph = new Sphere(300);  // Rayon de la Terre
 
         // Appliquer la texture de la Terre
         PhongMaterial skin = new PhongMaterial();
         javafx.scene.image.Image earthImage = new javafx.scene.image.Image(
-                getClass().getResource("/com/example/tp_java_s9_tripodi/earth_lights_4800.png").toExternalForm() //chemin relatif car l'absolu me causait des erreurs.
+                getClass().getResource("/com/example/tp_java_s9_tripodi/earth_lights_4800.png").toExternalForm()
         );
         skin.setDiffuseMap(earthImage);
         skin.setSelfIlluminationMap(earthImage);
@@ -39,8 +41,8 @@ public class Earth extends Group {
         AnimationTimer animationTimer = new AnimationTimer() {
             @Override
             public void handle(long now) {
-                ry.setAxis(new Point3D(0, 1, 0)); // Rotation autour de l'axe Y
-                ry.setAngle(now / 100000000); // Angle de rotation, la valeur n'est pas bonne.
+                ry.setAxis(new Point3D(0, 1, 0));  // Rotation autour de l'axe Y
+                ry.setAngle(now / 100000000);  // Angle de rotation (valeur ajustée)
                 if (needUpdate) {
                     needUpdate = false;
                     updateYellowSpheres();
@@ -50,20 +52,21 @@ public class Earth extends Group {
         animationTimer.start();
     }
 
-    // Créer une sphère pour représenter un point donné sur la Terre
+    // Créer une sphère pour représenter un point donné sur la Terre (en fonction des coordonnées géographiques)
     public Sphere createSphere(Aeroport a, Color color) {
         return createSphere(a.getLatitude(), a.getLongitude(), color);
     }
 
+    // Créer une sphère avec latitude et longitude
     public Sphere createSphere(double latitude, double longitude, Color color) {
         PhongMaterial material = new PhongMaterial();
         material.setSpecularColor(color);
         material.setDiffuseColor(color);
 
-        Sphere sphere = new Sphere(5); // Rayon de la sphère
+        Sphere sphere = new Sphere(5);  // Rayon de la sphère
         sphere.setMaterial(material);
 
-        sphere.setTranslateZ(-sph.getRadius()); // Placer sur la surface de la Terre
+        sphere.setTranslateZ(-sph.getRadius());  // Placer sur la surface de la Terre
 
         // Rotation selon la longitude
         Rotate rotateLongitude = new Rotate(-longitude, Rotate.Y_AXIS);
@@ -79,7 +82,7 @@ public class Earth extends Group {
     // Afficher une sphère rouge pour un aéroport donné
     public void displayRedSphere(Aeroport a) {
         if (redSphere != null) {
-            this.getChildren().remove(redSphere); // Supprimer la sphère précédente si elle existe
+            this.getChildren().remove(redSphere);  // Supprimer la sphère précédente si elle existe
         }
         redSphere = createSphere(a, Color.RED);
         this.getChildren().add(redSphere);
@@ -90,14 +93,15 @@ public class Earth extends Group {
 
     // Interroger l'API et afficher les sphères jaunes
     private void displayYellowSpheres(Aeroport a) {
-        String accessKey = "73c01d9141ea4c4594a8525812d1a79a"; // Clé API
+        String accessKey = "73c01d9141ea4c4594a8525812d1a79a";  // Clé API
         String jsonResponse = ApiRequest.fetchFlightData(accessKey, a.getIATA());
 
         if (jsonResponse != null) {
-            JsonFlightFiller filler = new JsonFlightFiller(jsonResponse, new World("data/airport-codes_no_comma.csv"));
+            JsonFlightFiller filler = new JsonFlightFiller(jsonResponse, world);  // Utilisation de l'objet world ici
 
-            for (Flight flight : filler.getList()) {
-                Aeroport departureAirport = filler.findByCode(flight.getDepartureIATA());
+            for (Flight flight : filler.getFlights()) {
+                // Utilisation de la méthode findByCode de World pour trouver l'aéroport de départ
+                Aeroport departureAirport = world.findByCode(flight.getDepartureIATA());
                 if (departureAirport != null) {
                     Sphere yellowSphere = createSphere(departureAirport, Color.YELLOW);
                     yellowSpheres.add(yellowSphere);

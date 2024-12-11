@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bdf8e6b-99d1-4169-97d0-d585ba60f663" name="Changes" comment="Création de plusieurs classes, problème au niveau de la class javax.json (API)">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp_java_s9_tripodi/libJson/javax.json-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/tp_java_s9_tripodi/libJson/javax.json-api-1.1.jar" afterDir="false" />
+    <list default="true" id="3bdf8e6b-99d1-4169-97d0-d585ba60f663" name="Changes" comment="Résolution des problèmes au niveau de la class javax.json (API). Cependant, j'ai un problème avec le fichier CSV.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JsonFlightFillerOracle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonFlightFillerOracle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ThreadScrapOnlineFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ThreadScrapOnlineFlight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Aeroport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Aeroport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Earth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Earth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/Interface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/JsonFlightFiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/JsonFlightFiller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/TestJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tp_java_s9_tripodi/TestJson.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +161,7 @@
       <workItem from="1733406225318" duration="7201000" />
       <workItem from="1733414491753" duration="536000" />
       <workItem from="1733415499550" duration="581000" />
-      <workItem from="1733925215198" duration="5067000" />
+      <workItem from="1733925215198" duration="7359000" />
     </task>
     <task id="LOCAL-00001" summary="Problème affichage Régler (Début API)">
       <option name="closed" value="true" />
@@ -198,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733928623986</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Résolution des problèmes au niveau de la class javax.json (API). Cependant, j'ai un problème avec le fichier CSV.">
+      <option name="closed" value="true" />
+      <created>1733930415466</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733930415466</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +213,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Problème affichage Régler (Début API)" />
     <MESSAGE value="Création de plusieurs classes, problème au niveau de la class javax.json (API)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Création de plusieurs classes, problème au niveau de la class javax.json (API)" />
+    <MESSAGE value="Résolution des problèmes au niveau de la class javax.json (API). Cependant, j'ai un problème avec le fichier CSV." />
+    <option name="LAST_COMMIT_MESSAGE" value="Résolution des problèmes au niveau de la class javax.json (API). Cependant, j'ai un problème avec le fichier CSV." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

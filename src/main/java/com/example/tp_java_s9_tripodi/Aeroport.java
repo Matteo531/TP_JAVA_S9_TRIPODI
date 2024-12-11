@@ -43,13 +43,6 @@ public class Aeroport {
         this.country=country;
     }
 
-
-
-    public static void main (String args[]){
-        Aeroport a1 = new Aeroport("Cergy","CY",45,3,"FRANCE");
-        System.out.println(a1);
-    }
-
     public static class Flight {
 
         private Aeroport departure;
@@ -90,5 +83,10 @@ public class Aeroport {
                     ", departureTime=" + departureTime +
                     '}';
         }
+    }
+
+    public static void main (String args[]){
+        Aeroport a1 = new Aeroport("Cergy","CY",45,3,"FRANCE"); // Test sur Cergy
+        System.out.println(a1);
     }
 }

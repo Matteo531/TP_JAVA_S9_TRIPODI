@@ -17,7 +17,7 @@ public class TestJson {
             JsonFlightFiller jsonFlightFiller = new JsonFlightFiller(testJson, w);
 
             // Afficher les vols
-            for (Flight flight : jsonFlightFiller.getList()) {
+            for (Flight flight : jsonFlightFiller.getFlights()) {
                 System.out.println(flight);
             }
         } catch (Exception e) {

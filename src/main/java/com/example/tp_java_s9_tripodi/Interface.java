@@ -17,13 +17,15 @@ public class Interface extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        World w = new World("C:/Users/Matteo/IdeaProjects/TP_JAVA_S9_TRIPODI/src/main/resources/com/example/tp_java_s9_tripodi/airport-codes_no_comma.csv"); // Utilise le chemin absolue car problème avec le ralatif
+        World w = new World("C:/Users/Matteo/IdeaProjects/TP_JAVA_S9_TRIPODI/src/main/resources/com/example/tp_java_s9_tripodi/airport-codes_no_comma.csv"); // Utilise le chemin absolue car problème avec le relatif
         // ArrayList<com.example.tp_java_s9_tripodi.Aeroport.Flight> listOfFlight = new ArrayList<com.example.tp_java_s9_tripodi.Aeroport.Flight>();
 
         primaryStage.setTitle("So world");
 
-        Earth earth = new Earth();
-        Scene ihm = new Scene(earth, 800, 600,true);
+        // Passer l'objet 'w' (World) au constructeur de Earth
+        Earth earth = new Earth(w);  // Modification ici pour passer l'objet World
+
+        Scene ihm = new Scene(earth, 800, 600, true);
 
         PerspectiveCamera camera = new PerspectiveCamera(true);
         camera.setTranslateZ(-1000);
@@ -38,35 +40,29 @@ public class Interface extends Application {
                 mousePosY = event.getSceneY();
             }
             if (event.getEventType() == MouseEvent.MOUSE_DRAGGED) {
-                tz.setZ((event.getSceneY() - mousePosY)*0.1);
+                tz.setZ((event.getSceneY() - mousePosY) * 0.1);
                 camera.getTransforms().add(tz);
             }
         });
 
         ihm.addEventHandler(MouseEvent.ANY, event -> {
-            if (event.getButton()== MouseButton.SECONDARY && event.getEventType()==MouseEvent.MOUSE_CLICKED) {
+            if (event.getButton() == MouseButton.SECONDARY && event.getEventType() == MouseEvent.MOUSE_CLICKED) {
                 PickResult pickResult = event.getPickResult();
                 if (pickResult.getIntersectedNode() != null) {
-                    Point2D click=pickResult.getIntersectedTexCoord();
-                    double longitude=360*(click.getX()-0.5);
-                    double latitude=180*(0.5-click.getY());
-                    Aeroport a = w.findNearestAirport(longitude,latitude);
+                    Point2D click = pickResult.getIntersectedTexCoord();
+                    double longitude = 360 * (click.getX() - 0.5);
+                    double latitude = 180 * (0.5 - click.getY());
+                    Aeroport a = w.findNearestAirport(longitude, latitude);
                     earth.displayRedSphere(a);
-                    //earth.displayBlueSphere(); // Test d'affichage
-                    System.out.println("x="+longitude+" y ="+latitude);
+                    // earth.displayBlueSphere(); // Test d'affichage
+                    System.out.println("x=" + longitude + " y=" + latitude);
                     System.out.println(a);
-
                 }
             }
         });
 
-
-
         primaryStage.setScene(ihm);
-
         primaryStage.show();
-
-
     }
 
     public static void main(String[] args) {
